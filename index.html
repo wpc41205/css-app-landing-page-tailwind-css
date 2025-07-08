@@ -8,6 +8,63 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- Start Coding Here -->
+    <!-- contact section -->
+    <div class="bg-[#fcfcfe] w-full h-[850px] flex justify-center items-start">
+      <div class="bg-white border-2 border-[#e0e0e0] rounded-xl p-8 w-[1199px] h-[666px] flex flex-col items-center">
+        <h2 class="font-bold text-[44px] leading-[48px] w-full text-center mb-8">Get in Touch</h2>
+        <form class="space-y-5 w-[589px]">
+          <!-- Name -->
+          <div>
+            <label class="block text-[#666666] text-[16px] leading-[24px] mb-2" for="name">Name</label>
+            <input
+              class="w-full border border-[#e0e0e0] rounded-lg px-4 py-3 text-[#666] text-[16px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0] bg-[#fcfcfe]"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+            />
+          </div>
+          <!-- Email -->
+          <div>
+            <label class="block text-[#666666] text-[16px] leading-[24px] mb-2" for="email">Email</label>
+            <input
+              class="w-full border border-[#e0e0e0] rounded-lg px-4 py-3 text-[#666] text-[16px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0] bg-[#fcfcfe]"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+            />
+          </div>
+          <!-- Message -->
+          <div class="relative">
+            <label class="block text-[#666666] text-[16px] leading-[24px] mb-2" for="message">Message</label>
+            <textarea
+              class="w-full border border-[#e0e0e0] rounded-lg px-4 py-3 text-[#666] text-[16px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0] bg-[#fcfcfe] resize-none"
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Your message..."
+            ></textarea>
+            <!-- ไอคอน 2 ขีด มุมขวาล่าง -->
+            <svg class="absolute bottom-2 right-0 w-5 h-5 text-[#a0a0b0] pointer-events-none" fill="none" viewBox="0 0 20 20">
+              <line x1="7" y1="17" x2="17" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="11" y1="19" x2="19" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </form>
+        <button class="bg-[#1A1A2C] text-white text-[16px] p-16,36 mt-[40px] rounded-[16px] w-[589px] h-[56px] gap-[6px]">Submit</button>
+      </div>
+    </div>
+    <!-- footer section -->
+     <!-- footer section -->
+     <footer class="flex justify-between items-center w-full border-t border-[#e0e0e0] px-2 py-1 text-[13px]">
+      <span class="text-[#666]">Acme productivity app ©2024</span>
+      <nav class="flex gap-4">
+        <a href="#" class="text-[#666] hover:underline">FAQ</a>
+        <a href="#" class="text-[#666] hover:underline">Terms</a>
+        <a href="#" class="text-[#666] hover:underline">All Policy</a>
+        <a href="#" class="text-[#666] hover:underline">Pricing</a>
+      </nav>
+    </footer>
   </body>
 </html>
