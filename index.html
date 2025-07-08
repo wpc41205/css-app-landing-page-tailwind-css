@@ -79,15 +79,17 @@
     </section>
   <body>
     <!-- contact section -->
-    <div class="bg-[#fcfcfe] w-full h-[850px] flex justify-center items-start">
-      <div class="bg-white border-2 border-[#e0e0e0] rounded-xl p-8 w-[1199px] h-[666px] flex flex-col items-center">
+    <div class="flex-1 flex justify-center items-start">
+      <div class="bg-white border-2 rounded-xl p-8 w-[1199px] h-[666px] flex flex-col items-center">
         <h2 class="font-bold text-[44px] leading-[48px] w-full text-center mb-8">Get in Touch</h2>
         <form class="space-y-5 w-[589px]">
           <!-- Name -->
           <div>
             <label class="block text-[#666666] text-[16px] leading-[24px] mb-2" for="name">Name</label>
             <input
-              class="w-full border border-[#e0e0e0] rounded-lg px-4 py-3 text-[#666] text-[16px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0] bg-[#fcfcfe]"
+              class="w-full border border-[#E0E0ED] rounded-lg px-3 py-3 text-[#666] text-[16px] leading-[24px]
+                     focus:outline-none focus:border-[#5E44FF] focus:ring-0
+                     hover:border-[#B5A9FF] bg-[#fcfcfe]"
               type="text"
               id="name"
               name="name"
@@ -98,7 +100,9 @@
           <div>
             <label class="block text-[#666666] text-[16px] leading-[24px] mb-2" for="email">Email</label>
             <input
-              class="w-full border border-[#e0e0e0] rounded-lg px-4 py-3 text-[#666] text-[16px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0] bg-[#fcfcfe]"
+              class="w-full border border-[#E0E0ED] rounded-lg px-3 py-3 text-[#666] text-[16px] leading-[24px]
+                     focus:outline-none focus:border-[#5E44FF] focus:ring-0
+                     hover:border-[#B5A9FF] bg-[#fcfcfe]"
               type="email"
               id="email"
               name="email"
@@ -109,7 +113,9 @@
           <div class="relative">
             <label class="block text-[#666666] text-[16px] leading-[24px] mb-2" for="message">Message</label>
             <textarea
-              class="w-full border border-[#e0e0e0] rounded-lg px-4 py-3 text-[#666] text-[16px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0] bg-[#fcfcfe] resize-none"
+              class="w-full border border-[#E0E0ED] rounded-lg px-3 py-3 text-[#666] text-[16px] leading-[24px]
+                     focus:outline-none focus:border-[#5E44FF] focus:ring-0
+                     hover:border-[#B5A9FF] bg-[#fcfcfe] resize-none"
               id="message"
               name="message"
               rows="4"
@@ -122,18 +128,24 @@
             </svg>
           </div>
         </form>
-        <button class="bg-[#1A1A2C] text-white text-[16px] p-16,36 mt-[40px] rounded-[16px] w-[589px] h-[56px] gap-[6px]">Submit</button>
+        <button
+          class="w-[589px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white
+                 hover:bg-[#5F5F76]
+                 focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]
+                 transition-colors duration-150"
+        >
+          Submit
+        </button>
       </div>
     </div>
-    <!-- footer section -->
-     <!-- footer section -->
-     <footer class="flex justify-between items-center w-full border-t border-[#e0e0e0] px-2 py-1 text-[13px]">
-      <span class="text-[#666]">Acme productivity app ©2024</span>
-      <nav class="flex gap-4">
-        <a href="#" class="text-[#666] hover:underline">FAQ</a>
-        <a href="#" class="text-[#666] hover:underline">Terms</a>
-        <a href="#" class="text-[#666] hover:underline">All Policy</a>
-        <a href="#" class="text-[#666] hover:underline">Pricing</a>
+    <!-- footer section (อยู่นอกกล่องขาว) -->
+    <footer class="w-[1199px] mx-auto h-[24px] flex justify-between items-center gap-[37px] text-[16px] mb-8 mt-[100px]">
+      <span class="text-[#666] text-[16px]">Acme productivity app ©2024</span>
+      <nav class="flex gap-8 items-center">
+        <a href="#" class="text-[#666] text-[16px] font-bold hover:underline">FAQ</a>
+        <a href="#" class="text-[#666] text-[16px] font-bold hover:underline">Terms</a>
+        <a href="#" class="text-[#666] text-[16px] font-bold hover:underline">AI Policy</a>
+        <a href="#" class="text-[#666] text-[16px] font-bold hover:underline">Pricing</a>
       </nav>
     </footer>
   </body>
